@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="ko" class="light-style">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <title>GA 포털 통합관리자</title>
+
+  <!-- Main font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <!-- <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css"> -->
+  <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css"> -->
+  <!-- <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css"> -->
+  <!-- <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css"> -->
+
+  <!-- Core stylesheets -->
+  <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/vendor/css/appwork.css">
+  <link rel="stylesheet" href="assets/vendor/css/theme-corporate.css">
+  <link rel="stylesheet" href="assets/vendor/css/colors.css">
+  <link rel="stylesheet" href="assets/vendor/css/uikit.css">
+
+  <!-- Load polyfills -->
+  <script src="assets/vendor/js/polyfills.js"></script>
+  <script>document['documentMode']===10&&document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=Intl.~locale.en"><\/script>')</script>
+
+  <!-- Layout helpers -->
+  <script src="assets/vendor/js/layout-helpers.js"></script>
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="assets/vendor/libs/quill/typography.css">
+  <link rel="stylesheet" href="assets/vendor/libs/quill/editor.css">
+  <link rel="stylesheet" href="assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.css">
+
+  <!-- `perfect-scrollbar` library required by SideNav plugin -->
+  <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+
+</head>
+<body>
+
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-1">
+    <!-- Layout inner -->
+    <div class="layout-inner">
+
+      <!-- Layout navbar -->
+      <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-navbar-theme container-p-x" id="layout-navbar">
+        <a href="index.html" class="navbar-brand">GA 포털 통합관리자</a>
+
+        <!-- Sidenav toggle -->
+        <div class="layout-sidenav-toggle navbar-nav align-items-lg-center mr-auto mr-lg-4">
+          <a class="nav-item nav-link px-0 ml-2" href="javascript:void(0)">
+            <i class="ion ion-md-menu text-large align-middle"></i>
+          </a>
+        </div>
+
+        <!-- Navbar toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#layout-navbar-collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </nav>
+      <!-- / Layout navbar -->
+
+      <div class="layout-container">
+
+        <!-- Layout sidenav -->
+        <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-sidenav-theme">
+          <ul class="sidenav-inner py-1">
+            <li class="sidenav-item">
+              <a href="index.html" class="sidenav-link"><i class="sidenav-icon ion ion-md-speedometer"></i>
+                <div>Dashboard</div>
+              </a>
+            </li>
+            <li class="sidenav-item open">
+              <a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i class="sidenav-icon ion ion-md-quote"></i>
+                <div>하나공감</div>
+              </a>
+  
+              <ul class="sidenav-menu">
+                <li class="sidenav-item">
+                  <a href="post-write.html" class="sidenav-link">
+                    <div>컨텐츠 작성</div>
+                  </a>
+                </li>
+                <li class="sidenav-item">
+                  <a href="post-list.html" class="sidenav-link">
+                    <div>컨텐츠 목록</div>
+                  </a>
+                </li>
+                <li class="sidenav-item active">
+                  <a href="post-recommend.html" class="sidenav-link active">
+                    <div>추천 컨텐츠</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- / Layout sidenav -->
+
+        <div class="layout-content">
+
+          <!-- Page content -->
+          <div class="container-fluid flex-grow-1 container-p-y">
+            <h4 class="font-weight-bold py-3 mb-4">
+                <span class="text-muted font-weight-light">하나공감 /</span> 추천 컨텐츠
+            </h4>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="컨텐츠 고유번호를 입력하세요.">
+                        <span class="input-group-append">
+                          <button class="btn btn-secondary" type="button">저장</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="card-img-top" src="assets/images/picography-macro-paper-money-001.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">고유번호 : 12</p>
+                    <h4 class="card-title">title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="컨텐츠 고유번호를 입력하세요.">
+                        <span class="input-group-append">
+                          <button class="btn btn-secondary" type="button">저장</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="card-img-top" src="assets/images/picography-macro-paper-money-001.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">고유번호 : 12</p>
+                    <h4 class="card-title">title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="컨텐츠 고유번호를 입력하세요.">
+                        <span class="input-group-append">
+                          <button class="btn btn-secondary" type="button">저장</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="card-img-top" src="assets/images/picography-macro-paper-money-001.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <p class="card-text">고유번호 : 12</p>
+                    <h4 class="card-title">title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+
+            
+          </div>
+          <!-- / Page content -->
+
+          <!-- Layout footer -->
+          <nav class="layout-footer footer bg-footer-theme">
+            <div class="container-fluid container-p-x pb-3 pt-3">
+              © 2022. Hana Financial Find Inc. All rights reserved.
+            </div>
+          </nav>
+          <!-- / Layout footer -->
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Layout inner -->
+
+    <div class="layout-overlay layout-sidenav-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
+
+  <!-- Core scripts -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+  <script src="assets/vendor/js/sidenav.js"></script>
+
+  <!-- Libs -->
+  <script src="assets/vendor/libs/quill/quill.js"></script>
+  <script src="assets/vendor/libs/moment/moment.js"></script>
+  <script src="assets/vendor/libs/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+
+  <!-- `perfect-scrollbar` library required by SideNav plugin -->
+  <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+  <!-- Main script -->
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(function(){
+    if (!window.Quill) {
+        return $('#quill-editor,#quill-toolbar,#quill-bubble-editor,#quill-bubble-toolbar').remove();
+      }
+    
+      var editor = new Quill('#quill-editor', {
+        modules: {
+          toolbar: '#quill-toolbar'
+        },
+        placeholder: 'Type something',
+        theme: 'snow'
+      });
+      $('#datepicker-base, #publish-date').datepicker({
+      });
+
+    });
+  </script>
+</body>
+</html>
